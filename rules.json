@@ -1,0 +1,33 @@
+[
+  { "id": 1, "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/warning.html" } },
+    "condition": { "urlFilter": "q=%D0%B1%D1%83%D0%BC%D0%B0%D0%B3%D0%B0", "resourceTypes": ["main_frame"],
+      "requestDomains": ["www.google.com","www.google.ru","www.google.nl","duckduckgo.com","www.bing.com"] }
+  },
+  { "id": 2, "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/warning.html" } },
+    "condition": { "urlFilter": "q=%D0%BA%D0%BE%D1%82", "resourceTypes": ["main_frame"],
+      "requestDomains": ["www.google.com","www.google.ru","www.google.nl","duckduckgo.com","www.bing.com"] }
+  },
+  { "id": 3, "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/warning.html" } },
+    "condition": { "urlFilter": "q=%D0%B0%D1%80%D0%B1%D1%83%D0%B7", "resourceTypes": ["main_frame"],
+      "requestDomains": ["www.google.com","www.google.ru","www.google.nl","duckduckgo.com","www.bing.com"] }
+  },
+
+  { "id": 4, "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/warning.html" } },
+    "condition": { "urlFilter": "text=%D0%B1%D1%83%D0%BC%D0%B0%D0%B3%D0%B0", "resourceTypes": ["main_frame"],
+      "requestDomains": ["yandex.ru","yandex.com","ya.ru"] }
+  },
+  { "id": 5, "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/warning.html" } },
+    "condition": { "urlFilter": "text=%D0%BA%D0%BE%D1%82", "resourceTypes": ["main_frame"],
+      "requestDomains": ["yandex.ru","yandex.com","ya.ru"] }
+  },
+  { "id": 6, "priority": 1,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/warning.html" } },
+    "condition": { "urlFilter": "text=%D0%B0%D1%80%D0%B1%D1%83%D0%B7", "resourceTypes": ["main_frame"],
+      "requestDomains": ["yandex.ru","yandex.com","ya.ru"] }
+  }
+]

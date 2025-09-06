@@ -1,0 +1,43 @@
+{
+  "name": "Search Stopper",
+  "description": "Блокирует поисковые запросы с запрещёнными словами",
+  "version": "3.3",
+  "manifest_version": 3,
+
+  "permissions": [],
+
+  "host_permissions": [
+    "*://www.google.com/*",
+    "*://www.google.ru/*",
+    "*://www.google.nl/*",
+    "*://yandex.ru/*",
+    "*://yandex.com/*",
+    "*://ya.ru/*",
+    "*://duckduckgo.com/*",
+    "*://www.bing.com/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/*",
+        "https://www.google.ru/*",
+        "https://www.google.nl/*",
+        "https://yandex.ru/*",
+        "https://yandex.com/*",
+        "https://ya.ru/*",
+        "https://duckduckgo.com/*",
+        "https://www.bing.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["warning.html", "warning.css", "warning.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
